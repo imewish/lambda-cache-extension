@@ -1,0 +1,10 @@
+dynamoDb:
+  getTemplate:
+    tableName: 'test'
+    PK: 'hello'
+    SK: 'world'
+    Condition: ''
+s3:
+  getProductStructure:
+    bucket: 'test-bucket'
+    key: 'hello.json'

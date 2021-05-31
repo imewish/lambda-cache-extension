@@ -1,0 +1,22 @@
+{
+  "name": "lambda-cache-extension",
+  "version": "1.0.0",
+  "description": "AWS Lambda extension to cache DynamoDb,S3,AppConfig Calls",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imewish/lambda-cache-extension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imewish/lambda-cache-extension/issues"
+  },
+  "homepage": "https://github.com/imewish/lambda-cache-extension#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

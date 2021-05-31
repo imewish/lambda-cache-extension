@@ -1,0 +1,30 @@
+service: frontend
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:*
+        - dynamodb:*
+      Resource: '*'
+
+layers:
+    cache:
+      path: cacheExtention
+
+functions:
+  hello:
+    handler: handler.hello
+    layers:
+      - arn:aws:lambda:us-east-1:519268124663:layer:cache:7
+    events:
+    - http:
+        path: /test/
+        method: POST
+
+
+ 
